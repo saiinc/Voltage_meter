@@ -40,7 +40,7 @@ void loop()
       lcd_timing = millis();
       lcd.setCursor(12, 0);
       lcd.print(String(voltage)+"B  ");
-      if (voltage < 20)
+      if (voltage < 21)
       {
         lcd.setCursor(0, 0);
         lcd.print("HAПPЯЖEHИE");
@@ -49,7 +49,7 @@ void loop()
         tone_status = 1;
         
       }
-      else if (voltage > 30)
+      else if (voltage > 29)
       {
         lcd.setCursor(0, 0);
         lcd.print("HAПPЯЖEHИE");
